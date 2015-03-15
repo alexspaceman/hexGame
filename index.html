@@ -1,0 +1,81 @@
+<!--==================================================-->
+<!--==================================================-->
+<html ng-app="hexGame">
+  <head>
+    <title>The Hex Game</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  </head>
+  <body ng-controller="HexGameController">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    <script src="app.js"></script>
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
+
+<!--==================================================-->
+<!--==================================================-->
+
+    <h2>ANGULAR TESTS</h2>
+    <div>
+      <c>Username: <a><input ng-model='userName'></a></c>
+      <!--data-ng-bind allows you to use HTML validating tools-->
+      <c>Your name is <a data-ng-bind="userName"></a></c>
+      <c>Your name is <a ng-bind="userName"></a></c>
+    </div>
+
+    <div>
+      <c>Picture URL: <a><input ng-model='pictureUrl'></a></c>
+      <button ng-click="showPicture()">Show/Hide</button>
+    </div>
+    <img ng-show="showPictureBool" src="{{pictureUrl}}" style="width:450px;height:300px">
+
+    <div my-directive></div>
+    <!--my-customer is a directive copied verbatim from angular docs
+        yet I cant get it to load the my-customer.html-->
+    <div my-customer></div>
+
+    <hr/>
+<!--==================================================-->
+<!--==================================================-->
+
+    <h2>SOFT CODED JS HEXES</h2>
+
+    <hr/>
+<!--==================================================-->
+<!--==================================================-->
+
+    <h2>HARD CODED HTML HEXES</h2>
+  	<div>
+      <div class="hex-row">
+    		<div class="hex">
+    			<div class="top"></div>
+    			<div class="middle"></div>
+    			<div class="bottom"></div>
+    		</div>
+    		<div class="hex">
+    			<div class="top"></div>
+    			<div class="middle"></div>
+    			<div class="bottom"></div>
+    		</div>
+    	</div>
+    	<div class="hex-row-even">
+    		<div class="hex">
+    			<div class="top"></div>
+    			<div class="middle"></div>
+    			<div class="bottom"></div>
+    		</div>
+    		<div class="hex">
+    			<div class="top"></div>
+    			<div class="middle"></div>
+    			<div class="bottom"></div>
+    		</div>
+    	</div>
+    </div>
+
+<!--==================================================-->
+<!--==================================================-->
+  </body>
+</html>
