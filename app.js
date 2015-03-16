@@ -1,4 +1,8 @@
+<<<<<<< HEAD
   //TESTING AND SETUP========================================
+=======
+//TESTING AND SETUP========================================
+>>>>>>> cb92312a76c8f257d0c4c042940e480db396326b
 //=========================================================
 console.log('app.js loaded');
 
@@ -7,12 +11,20 @@ var hexGame = angular.module('hexGame', []);
 //TEST DIRECTIVES (MUST BE OUTSIDE OF CONTROLLER)==========
 
 hexGame.directive('myDirective', function () {
+<<<<<<< HEAD
   return {template: 'This is a template from myDirective'};
+=======
+  return {template: 'This is a template from myDirective'}
+>>>>>>> cb92312a76c8f257d0c4c042940e480db396326b
 });
 
 //Trying to make this load the my-customer.html template
 //It does not want
+<<<<<<< HEAD
 hexGame.directive('myCustomer', function () {
+=======
+hexGame.directive('myCustomer', function() {
+>>>>>>> cb92312a76c8f257d0c4c042940e480db396326b
   return {
     templateUrl: 'my-customer.html'
   };
